@@ -1,0 +1,41 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
+# DOTA 1.0 dataset https://captain-whu.github.io/DOTA/index.html for object detection in aerial images by Wuhan University
+# Documentation: https://docs.ultralytics.com/datasets/obb/dota-v2/
+# Example usage: yolo train model=yolov8n-obb.pt data=DOTAv1.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── dota1 ← downloads here (2 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /data1/suoyuxi/FAIR-CSAR/DOTA_SL # dataset root dir
+train: images/train # train images
+val: images/val # val images
+test: images/test # test images
+
+# Classes for DOTA 1.0
+names:
+  0: Airbus_A220
+  1: Airbus_A320
+  2: Airbus_A330
+  3: Boeing737
+  4: Boeing747
+  5: Boeing767
+  6: Boeing777
+  7: Helicopter
+  8: Gulfstream
+  9: Fokker-50
+  10: Airfreighter
+  11: Other_Aircraft
+  12: General_Cargo_Ship
+  13: Bulk_Carrier
+  14: Container_Ship
+  15: Oil_Tanker
+  16: Warship
+  17: Motion_Defocusing_Ship
+  18: Other_Ship
+  19: Tank
+  20: Tower_Crane
+  21: Bridge
+
